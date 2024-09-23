@@ -53,6 +53,60 @@
    </head>
 
    <body class="font-sans text-gray-600">
+      <!-- ====== Preloader ======  -->
+      <div class="loading">
+         <div class="load-circle"></div>
+      </div>
+      <!-- ======End Preloader ======  -->
+
+      <!-- ====== Navigation ======  -->
+      <header
+         id="main-navbar"
+         class="px-6 lg:px-0 fixed flex items-center h-16 lg:h-20 inset-x-0 top-0 text-white z-50 font-sora"
+      >
+         <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="/" class="text-2xl font-semibold uppercase">Surovi</a>
+
+            <button
+               id="navigation-menu-btn"
+               class="block lg:hidden"
+               data-toggle="collapse"
+               data-target="#nav-icon-collapse"
+               aria-expanded="false"
+               onclick="toggleVisibility()"
+            >
+               <span class="sr-only">Toggle navigation</span>
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  viewBox="0 0 464.205 464.205"
+                  class="size-6 fill-current"
+               >
+                  <path
+                     d="M435.192 406.18H29.013C12.989 406.18 0 393.19 0 377.167s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013zm0-145.065H29.013C12.989 261.115 0 248.126 0 232.103s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012zm0-145.064H29.013C12.989 116.051 0 103.062 0 87.038s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z"
+                  />
+               </svg>
+            </button>
+
+            <nav
+               id="navigation-menu"
+               class="hidden py-12 lg:py-0 fixed top-16 inset-x-0 lg:static lg:inline-block bg-white lg:bg-transparent text-gray-900 lg:text-inherit"
+            >
+               <ul
+                  class="text-lg flex flex-col lg:flex-row gap-x-6 gap-y-8 lg:gap-x-12 items-center"
+               >
+                  <li><a href="" class="active">Home</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#activities">Activities</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- ====== End Navigation ======  -->
 
       <!-- jQuery -->
       <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
